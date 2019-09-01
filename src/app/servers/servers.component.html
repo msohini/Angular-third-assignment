@@ -1,0 +1,5 @@
+<button class="btn btn-primary" (click)="clicked()">
+  Display Details
+</button>
+<p *ngIf="Isclicked;">Secret Password= Tuna</p>
+<p *ngFor="let c of buttonclick ; let i=index" [ngStyle]={backgroundColor:getColor(i)} [ngClass]="{spcolor:i>4}">The click number is {{c}}</p>  
